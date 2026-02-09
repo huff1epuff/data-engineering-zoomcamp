@@ -1,6 +1,7 @@
-Homework 1 SQL commands
+# Homework 1 SQL commands
 
-Q-3
+- Question 3
+```
 select 
 	count(1)
 from 
@@ -8,8 +9,10 @@ from
 where
 	date_trunc('day',lpep_pickup_datetime) between '2025-11-01' and '2025-11-30'
 	and trip_distance <= 1;
+```
 
-Q-4
+- Question 4
+```
 select 
 	cast(lpep_pickup_datetime as DATE) as "day",
 	max(trip_distance) as "max_distance"
@@ -21,8 +24,10 @@ group by
 	"day"
 order by 
 	"max_distance" desc;
+```
 
-Q-5
+- Question 5
+```
 SELECT
     sum(total_amount) as "total",
     zpu."Zone" AS "pickup_loc"
@@ -37,8 +42,10 @@ group by
 order by 
 	"total" desc
 LIMIT 100;
+```
 
-Q-6
+- Question 6
+```
 SELECT
     zpu."Zone" AS "pickup_loc",
 	zdo."Zone" AS "dropoff_loc",
@@ -57,4 +64,4 @@ group by
 order by 
 	"largest_tip" desc
 LIMIT 100;
-
+```
