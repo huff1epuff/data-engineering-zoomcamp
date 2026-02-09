@@ -1,6 +1,6 @@
 # Homework 1 SQL commands
 
-- Question 3
+### Question 3
 ```
 select 
 	count(1)
@@ -11,7 +11,7 @@ where
 	and trip_distance <= 1;
 ```
 
-- Question 4
+### Question 4
 ```
 select 
 	cast(lpep_pickup_datetime as DATE) as "day",
@@ -26,7 +26,7 @@ order by
 	"max_distance" desc;
 ```
 
-- Question 5
+### Question 5
 ```
 SELECT
     sum(total_amount) as "total",
@@ -44,7 +44,7 @@ order by
 LIMIT 100;
 ```
 
-- Question 6
+### Question 6
 ```
 SELECT
     zpu."Zone" AS "pickup_loc",

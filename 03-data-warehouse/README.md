@@ -23,7 +23,7 @@ from
 ```
 > answer is `20332093`
 
-- Question 2
+### Question 2
 ```
 select 
     count(distinct(PULocationID)) as unique_PULocationID_count 
@@ -40,7 +40,7 @@ from
 ```
 > estimated `155.12 MB`
 
-- Question 4
+### Question 4
 ```
 select 
     count(*) 
@@ -51,7 +51,7 @@ where
 ```
 > answer is `8333`
 
-- Question 5
+### Question 5
 ```
 CREATE OR REPLACE TABLE `python-for-drive.zoomcamp.yellow_tripdata_partitioned_clustered`
 PARTITION BY DATE(tpep_dropoff_datetime)
@@ -60,7 +60,7 @@ CLUSTER BY VendorID AS (
 );
 ```
 
-- Question 6
+### Question 6
 ```
 select 
     distinct(VendorID)
