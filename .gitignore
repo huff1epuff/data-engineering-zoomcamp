@@ -101,6 +101,7 @@ Thumbs.db
 *.pem
 .env
 secret.yaml
+.env_encoded
 
 charts/kestra-starter/charts
 charts/kestra/charts
